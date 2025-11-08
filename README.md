@@ -1,11 +1,7 @@
 # gigabyte-laptop-wmi
 
-This is an experimental kernel driver for Gigabyte Aero/AORUS laptops to
+This is an experimental kernel driver for Gigabyte Aero/AORUS laptops (and GiMATE-enabled laptops) to
 interact with the embedded controller.
-
-Gigabyte Gaming series laptops are not supported. Since they are just rebadged
-Clevo laptops (specifically, the NP5x and NP7x series), you can just use
-[these drivers](https://github.com/wessel-novacustom/clevo-keyboard/tree/master).
 
 ## Overview
 
@@ -35,7 +31,7 @@ The following models are compatible, but **not** yet supported:
 
 The following models are not supported:
 - All Sabre models (retired in 2018) and Gigabyte Gaming models (both are rebadged
-Clevo laptops, use [this driver](https://github.com/wessel-novacustom/clevo-keyboard/tree/master) instead)
+Clevo laptops, use [this driver](https://github.com/wessel-novacustom/clevo-keyboard/tree/master) instead), **but not GiMATE-enabled models** (which using this driver)
 - All U series models
 
 ## Installation/Usage
