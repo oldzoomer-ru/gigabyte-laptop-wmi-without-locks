@@ -943,10 +943,10 @@ static int __init gigabyte_laptop_init(void)
 		return -ENODEV;
 	}
 
-	if (!dmi_check_system(gigabyte_laptop_known_working_platforms)) {
-		pr_err("Laptop not supported\n");
-		return -ENODEV;
-	}
+//	if (!dmi_check_system(gigabyte_laptop_known_working_platforms)) {
+//		pr_err("Laptop not supported\n");
+//		return -ENODEV;
+//	}
 
 	result = platform_driver_register(&platform_driver);
 	if (result) {
