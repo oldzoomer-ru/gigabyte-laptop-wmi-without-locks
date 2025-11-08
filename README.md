@@ -1,6 +1,6 @@
 # gigabyte-laptop-wmi
 
-This is an experimental kernel driver for Gigabyte Aero/AORUS laptops (and GiMATE-enabled laptops) to
+This is an experimental kernel driver for Gigabyte Aero/AORUS laptops **(and GiMATE-enabled Gigabyte Gaming laptops)** to
 interact with the embedded controller.
 
 ## Overview
@@ -24,6 +24,7 @@ The following models are currently supported:
 - All Aero 17 models
 - The Aero 14 OLED (2023)
 - All AORUS models
+- GiMATE-enabled Gigabyte Gaming models
 
 The following models are compatible, but **not** yet supported:
 - All Aero 14 models made before 2019 (see [this issue](https://github.com/tangalbert919/gigabyte-laptop-wmi/issues/7))
