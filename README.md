@@ -35,6 +35,13 @@ The following models are not supported:
 Clevo laptops, use [this driver](https://github.com/wessel-novacustom/clevo-keyboard/tree/master) instead), **but not GiMATE-enabled models** (which using this driver)
 - All U series models
 
+## GiMATE-enabled laptops support state
+
+- Battery charge limit - working
+- Fan speed modes - +/- (auto, normal, and fixed mode is working, others is ~)
+- Temperature - is correct
+- Fan - is not correct
+
 ## Installation/Usage
 
 All information for this have been moved to [INSTALL.md](INSTALL.md) and [USAGE.md](USAGE.md). You can also check the [wiki](https://github.com/tangalbert919/gigabyte-laptop-wmi/wiki) on how to install and use this kernel driver.
