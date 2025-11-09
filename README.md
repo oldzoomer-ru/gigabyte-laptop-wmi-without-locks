@@ -40,7 +40,7 @@ Clevo laptops, use [this driver](https://github.com/wessel-novacustom/clevo-keyb
 - Battery charge limit - working
 - Fan speed modes - +/- (auto, normal, and fixed mode is working, others is ~)
 - Temperature - is correct
-- Fan - is not correct
+- Fan - is not correct by default, but fixes with [this patch](gimate-fan-fix.patch)
 
 ## Installation/Usage
 
