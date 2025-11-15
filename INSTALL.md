@@ -2,25 +2,37 @@
 
 ## How to install
 
+### Method 0: Using PKGBUILD
+
+This module can be installed using PKGBUILD. Clone this repository to your home directory,
+then run `makepkg` in the cloned directory. This will create a package that you can install with pacman.
+
 ### Method 1: Using DKMS
 
 **Note:** If you have Secure Boot enabled, you must follow [these instructions](https://github.com/dell/dkms?tab=readme-ov-file#secure-boot) or the module will not load.
 
-This module can be installed using DKMS. You can download the driver tarball from the [releases page](https://github.com/tangalbert919/gigabyte-laptop-wmi/releases) and load it into the DKMS tree:
+This module can be installed using DKMS. You can download the driver tarball
+from the [releases page](https://github.com/tangalbert919/gigabyte-laptop-wmi/releases) and load it into the DKMS tree:
 ```
+tar -xzvf driver.tar.gz
+tar -czvf driver.tar.gz Makefile aorus-laptop.c dkms.conf
 dkms ldtarball driver.tar.gz
+dkms autoinstall
+cp aorus-laptop.conf /etc/modules-load.d/
 ```
 
 If you have this repository checked out locally, you can create a tarball and then load it into the DKMS tree:
 ```
-tar -czf driver.tar.gz Makefile aorus-laptop.c dkms.conf
+cd src/
+tar -czvf ../driver.tar.gz Makefile aorus-laptop.c dkms.conf
 ```
 
 Be sure to edit the `PACKAGE_VERSION` flag in `dkms.conf` before creating the tarball.
 
 ### Method 2: Manually
 
-**Note:** If you have Secure Boot enabled, you must sign the kernel module after compiling it. Using a signing key already enrolled into the computer is recommended.
+**Note:** If you have Secure Boot enabled, you must sign the kernel module after compiling it.
+Using a signing key already enrolled into the computer is recommended.
 
 Simply run the following commands:
 ```
@@ -28,13 +40,15 @@ make
 sudo insmod aorus-laptop.ko
 ```
 
-The last command has to be run after every reboot. If you have updated the kernel, you must run `make` before loading the kernel module.
+The last command has to be run after every reboot.
+If you have updated the kernel, you must run `make` before loading the kernel module.
 
 ## How to remove
 
 If you have installed the kernel driver with DKMS, you can run this command to remove it from the DKMS tree:
 ```
-# Replace <version> with the version of the driver in use. Use "dkms status" if you are not sure what version you have installed.
+# Replace <version> with the version of the driver in use.
+# Use "dkms status" if you are not sure what version you have installed.
 sudo dkms remove aorus-laptop/<version> --all
 ```
 
