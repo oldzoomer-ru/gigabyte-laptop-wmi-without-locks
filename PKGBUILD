@@ -1,7 +1,7 @@
 pkgbase=aorus-laptop
 pkgname=gimate-linux-wmi
-pkgver=0.2.0_mod
-pkgrel=2
+pkgver=0.3.0
+pkgrel=1
 pkgdesc="Kernel module allowing more control on Gigabyte Gaming GiMATE-enabled laptops"
 arch=('x86_64')
 url="https://github.com/oldzoomer-ru/gigabyte-laptop-wmi-without-locks"
