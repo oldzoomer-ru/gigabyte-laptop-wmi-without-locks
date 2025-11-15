@@ -238,7 +238,7 @@ static int gigabyte_laptop_hwmon_read(struct device *dev, enum hwmon_sensor_type
 			ret = gigabyte_laptop_get_devstate(fan_channels[channel], &output);
 			if (ret)
 				break;
-			*val = convert_fan_rpm(output);
+			*val = output;
 			break;
 		default:
 			break;

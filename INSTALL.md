@@ -2,12 +2,6 @@
 
 ## How to install
 
-### Apply fix for correct showing fan speed in GiMATE-enabled laptops
-
-```
-git apply gimate-fan-fix.patch
-```
-
 ### Method 1: Using DKMS
 
 **Note:** If you have Secure Boot enabled, you must follow [these instructions](https://github.com/dell/dkms?tab=readme-ov-file#secure-boot) or the module will not load.
