@@ -1,4 +1,4 @@
-# gigabyte-laptop-wmi
+# gimate-linux-wmi
 
 This is an experimental kernel driver for Gigabyte GiMATE-enabled Gigabyte Gaming laptops to
 interact with the embedded controller.
