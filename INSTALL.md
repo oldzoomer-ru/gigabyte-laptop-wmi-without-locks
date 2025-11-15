@@ -23,8 +23,8 @@ cp aorus-laptop.conf /etc/modules-load.d/
 
 If you have this repository checked out locally, you can create a tarball and then load it into the DKMS tree:
 ```
-cd src/
-tar -czvf ../driver.tar.gz Makefile aorus-laptop.c dkms.conf
+cd sources/
+tar -czvf driver.tar.gz Makefile aorus-laptop.c dkms.conf
 ```
 
 Be sure to edit the `PACKAGE_VERSION` flag in `dkms.conf` before creating the tarball.
